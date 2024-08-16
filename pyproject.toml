@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "brixy"
+version = "0.1.0"
+description = "Helpers for developing solution on Databricks and PySpark"
+readme = "README.md"
+authors = [
+  {name = "Dennis Egert", email = "degertsa@yahoo.com"}
+]
+maintainers = [
+  {name = "Dennis Egert", email = "degertsa@yahoo.com"}
+]
+classifiers = [
+
+]
+license = {text = "MIT license"}
+dependencies = [
+  "loguru"
+]
+
+[project.optional-dependencies]
+dev = [
+    "coverage",  # testing
+    "mypy",  # linting
+    "pytest",  # testing
+    "ruff"  # linting
+]
+
+[project.urls]
+
+bugs = "https://github.com/egde/brixy/issues"
+changelog = "https://github.com/egde/brixy/blob/master/changelog.md"
+homepage = "https://github.com/egde/brixy"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.package-data]
+"*" = ["*.*"]
