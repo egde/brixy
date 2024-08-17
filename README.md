@@ -1,3 +1,5 @@
+[![Python package](https://github.com/egde/brixy/actions/workflows/python-package.yml/badge.svg)](https://github.com/egde/brixy/actions/workflows/python-package.yml)
+
 # brixy
 
 brixy is a package with many utilities for developing on Databricks and PySpark.
