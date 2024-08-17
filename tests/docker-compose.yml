@@ -1,0 +1,38 @@
+services:
+  spark-master:
+    image: bitnami/spark:3.5.1
+    container_name: spark-master
+    hostname: spark-master
+    environment:
+      - SPARK_MODE=master
+      - SPARK_MASTER_HOST=spark-master
+    ports:
+      - "7077:7077"
+      - "8080:8080"
+
+  spark-connect:
+    image: bitnami/spark:3.5.1
+    container_name: spark-connect
+    hostname: spark-connect
+    environment:
+      - SPARK_MODE=driver
+      - SPARK_MASTER_HOST=spark-master
+    depends_on:
+      - spark-master
+    ports:
+      - "15002:15002"
+      - "4040:4040"
+    command: ["/bin/bash", "-c", "/opt/bitnami/spark/sbin/start-connect-server.sh --master spark://spark-master:7077 --packages org.apache.spark:spark-connect_2.12:3.5.1"]
+
+
+  spark-worker:
+    image: bitnami/spark:3.5.1
+    container_name: spark-worker
+    hostname: spark-worker
+    environment:
+      - SPARK_MODE=worker
+      - SPARK_MASTER_URL=spark://spark-master:7077
+    depends_on:
+      - spark-master
+    ports:
+      - "8081:8081"
