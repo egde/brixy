@@ -17,26 +17,26 @@ def step1():
 
 This will log:
 ```sh
-2024-08-17 20:58:50.f | INFO     | RUNNING   | test_logstep.<locals>.step1                        | 🏃‍♀️ Running step1
-2024-08-17 20:58:50.f | INFO     | COMPLETED | test_logstep.<locals>.step1                        | ✅ Completed running step1
+2024-08-17 20:58:50.f | INFO     | RUNNING   | test_logstep.<l | 🏃‍♀️ Running step1
+2024-08-17 20:58:50.f | INFO     | COMPLETED | test_logstep.<l | ✅ Completed running step1
 ```
 
 Logs are indented to show nested calls nicely:
 ```sh
-2024-08-17 20:59:55.f | INFO     | RUNNING   | test_logstep_indenting.<locals>.step_a             | 🏃‍♀️ Running step_a
-2024-08-17 20:59:55.f | INFO     | RUNNING   | test_logstep_indenting.<locals>.step1              |     🏃‍♀️ Running step1
-2024-08-17 20:59:55.f | INFO     | RUNNING   | step2                                              |         🏃‍♀️ Running step2
-2024-08-17 20:59:55.f | INFO     | COMPLETED | step2                                              |         ✅ Completed running step2
-2024-08-17 20:59:55.f | INFO     | RUNNING   | step2                                              |         🏃‍♀️ Running step2
-2024-08-17 20:59:55.f | INFO     | COMPLETED | step2                                              |         ✅ Completed running step2
-2024-08-17 20:59:55.f | INFO     | COMPLETED | test_logstep_indenting.<locals>.step1              |     ✅ Completed running step1
-2024-08-17 20:59:55.f | INFO     | RUNNING   | test_logstep_indenting.<locals>.step1              |     🏃‍♀️ Running step1
-2024-08-17 20:59:55.f | INFO     | RUNNING   | step2                                              |         🏃‍♀️ Running step2
-2024-08-17 20:59:55.f | INFO     | COMPLETED | step2                                              |         ✅ Completed running step2
-2024-08-17 20:59:55.f | INFO     | RUNNING   | step2                                              |         🏃‍♀️ Running step2
-2024-08-17 20:59:55.f | INFO     | COMPLETED | step2                                              |         ✅ Completed running step2
-2024-08-17 20:59:55.f | INFO     | COMPLETED | test_logstep_indenting.<locals>.step1              |     ✅ Completed running step1
-2024-08-17 20:59:55.f | INFO     | COMPLETED | test_logstep_indenting.<locals>.step_a             | ✅ Completed running step_a
+2024-08-17 20:59:55.f | INFO     | RUNNING   | test_logstep_in | 🏃‍♀️ Running step_a
+2024-08-17 20:59:55.f | INFO     | RUNNING   | test_logstep_in |     🏃‍♀️ Running step1
+2024-08-17 20:59:55.f | INFO     | RUNNING   | step2           |         🏃‍♀️ Running step2
+2024-08-17 20:59:55.f | INFO     | COMPLETED | step2           |         ✅ Completed running step2
+2024-08-17 20:59:55.f | INFO     | RUNNING   | step2           |         🏃‍♀️ Running step2
+2024-08-17 20:59:55.f | INFO     | COMPLETED | step2           |         ✅ Completed running step2
+2024-08-17 20:59:55.f | INFO     | COMPLETED | test_logstep_in |     ✅ Completed running step1
+2024-08-17 20:59:55.f | INFO     | RUNNING   | test_logstep_in |     🏃‍♀️ Running step1
+2024-08-17 20:59:55.f | INFO     | RUNNING   | step2           |         🏃‍♀️ Running step2
+2024-08-17 20:59:55.f | INFO     | COMPLETED | step2           |         ✅ Completed running step2
+2024-08-17 20:59:55.f | INFO     | RUNNING   | step2           |         🏃‍♀️ Running step2
+2024-08-17 20:59:55.f | INFO     | COMPLETED | step2           |         ✅ Completed running step2
+2024-08-17 20:59:55.f | INFO     | COMPLETED | test_logstep_in |     ✅ Completed running step1
+2024-08-17 20:59:55.f | INFO     | COMPLETED | test_logstep_in | ✅ Completed running step_a
 ```
 
 
