@@ -18,7 +18,6 @@ classifiers = [
 ]
 license = {text = "MIT license"}
 dependencies = [
-  "loguru"
 ]
 
 [project.optional-dependencies]
