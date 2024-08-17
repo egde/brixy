@@ -1,7 +1,6 @@
 # app/hello_world.py
 from datetime import date, datetime
 from pyspark.sql import SparkSession
-import time
 SparkSession.builder.master("local[*]").getOrCreate().stop()
 # Create a Spark session
 spark = SparkSession.builder.remote("sc://localhost:15002").appName("HelloWorldApp").getOrCreate()

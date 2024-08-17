@@ -27,7 +27,7 @@ def test_logstep():
     try:
         step3()
         assert False, "Exception not thrown"
-    except ValueError as e:
+    except ValueError:
         assert True
 
 def test_logstep_indenting():
