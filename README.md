@@ -1,3 +1,4 @@
+![PyPI Latest Release](https://img.shields.io/pypi/v/brixy.svg)
 [![Python package](https://github.com/egde/brixy/actions/workflows/python-package.yml/badge.svg)](https://github.com/egde/brixy/actions/workflows/python-package.yml)
 
 # brixy
