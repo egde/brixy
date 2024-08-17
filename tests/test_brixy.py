@@ -2,19 +2,19 @@
 
 """Tests for `brixy` package."""
 
-from brixy import brixy
+from brixy import log_step
 
-@brixy.log_step
+@log_step
 def step2():
     return 1+3
 
-@brixy.log_step
+@log_step
 def step3():
     raise ValueError('This is not right')
 
 def test_logstep():
 
-    @brixy.log_step
+    @log_step
     def step1():
         return 1+1
 
