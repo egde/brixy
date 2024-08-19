@@ -13,7 +13,7 @@ logger.setLevel(logging.INFO)
 console_handler = logging.StreamHandler()
 
 # Define the custom log format (will be dynamically updated later)
-formatter = logging.Formatter('%(asctime)s | %(levelname)-8s | %(message)s', datefmt='%Y-%m-%d %H:%M:%S.%f')
+formatter = logging.Formatter('%(asctime)s | %(levelname)-8s | %(message)s')
 console_handler.setFormatter(formatter)
 
 # Add the console handler to the logger
@@ -33,7 +33,7 @@ def log_step():
             format_string = (
                 "%(asctime)s | %(levelname)-8s | %(state)-9s | %(func_name)-50.50s | %(message)s"
             )
-            formatter = logging.Formatter(format_string, datefmt='%Y-%m-%d %H:%M:%S.%f')
+            formatter = logging.Formatter(format_string)
             console_handler.setFormatter(formatter)
 
             # Increment the indentation level before running the function
