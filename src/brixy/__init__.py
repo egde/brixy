@@ -1,1 +1,1 @@
-from brixy.logging import log_step
+from brixy.logging import log_step  # noqa: F401
