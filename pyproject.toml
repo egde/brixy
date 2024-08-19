@@ -31,7 +31,7 @@ dev = [
 [project.urls]
 
 bugs = "https://github.com/egde/brixy/issues"
-changelog = "https://github.com/egde/brixy/blob/master/changelog.md"
+changelog = "https://github.com/egde/brixy/releases"
 homepage = "https://github.com/egde/brixy"
 
 [tool.setuptools]
